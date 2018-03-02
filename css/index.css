@@ -148,29 +148,32 @@ button:focus {
 /* CATEGORIES AND TESTIMONIAL SECTION */
 
 .categories-testimonial-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 6em;
+  text-align: center;
 }
 
 .categories {
   display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-template-rows: repeat(2, 280px);
-  margin: 2em;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .categ {
   border: 1px solid #c8c8be;
   border-radius: 10px;
-  width: 280px;
-  height: 280px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 28px;
   color: #90918a;
   text-decoration: none;
+}
+
+.categ > img {
+  width: 100%;
+  height: auto;
 }
 
 .categ > span {
