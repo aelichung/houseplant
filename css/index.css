@@ -148,16 +148,16 @@ button:focus {
 /* CATEGORIES AND TESTIMONIAL SECTION */
 
 .categories-testimonial-container {
-  margin-left: 3em;
-  margin-right: 3em;
   margin-top: 6em;
-  text-align: center;
 }
 
 .categories {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3em;
 }
 
 .categ {
@@ -169,17 +169,13 @@ button:focus {
   font-size: 28px;
   color: #90918a;
   text-decoration: none;
+  display: block;
+  padding-bottom: 0.2em;
 }
 
 .categ > img {
   width: 100%;
   height: auto;
-}
-
-.categ > span {
-  display: block;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 @media (max-width: 500px) {
