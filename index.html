@@ -5,16 +5,16 @@
   <title>Houseplant</title>
   <meta name="author" content="Anne-Elise Chung" />
   <meta name="keywords" content="Chung, Anne-Elise, plants, plant, indoor, store" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="../js/index.js"></script>
   <link rel="stylesheet" href="../css/index.css" type="text/css" />
+  <link rel="stylesheet" href="../css/owl.carousel.css" type="text/css" />
+  <link rel="stylesheet" href="../css/owl.theme.default.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
 
 <body>
-  <section class="container">
-    <div class="header-item">
+  <section class="top-container">
+    <div class="header-item mobile">
       <button class="mobile hamburger">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -22,7 +22,7 @@
       </button>
     </div>
     <a class="header-item logo" href="#"><img alt="houseplant logo" src="../images/logo.png" /></a>
-    <a class="account header-item" href="#"><img alt="account" src="../images/mobile-account-icon.png" /></a>
+    <a class="mobile account header-item" href="#"><img alt="account" src="../images/mobile-account-icon.png" /></a>
     <div class="desktop header-item desk-account">
       <a class="sign-in" href="#">Sign In</a>
       <a class="sign-up" href="#">Sign Up</a>
@@ -44,7 +44,7 @@
       </button>
     </div>
   </section>
-  <section class="categories-testimonial-container">
+  <section class="categories-container">
     <div class="categories">
       <a class="categ" href="#">
         <img alt="plant gifts" src="../images/category-gift.png" />
@@ -64,6 +64,35 @@
       </a>
     </div>
   </section>
+  <section class="testimonials-container">
+    <div class="carousel-btn" id="testimonials-prev">
+      <a href><img alt="Previous" src="../images/prev_icon.png" /></a>
+    </div>
+    <div class="testimonials">
+      <div class="owl-carousel">
+        <div class="quote">
+          <p>“I love everything I get from your store! All the plants are always healthy and packaged carefully. Thank you houseplant!”</p>
+          <span class="who-quote">-Michelle S., Ojai, CA</span>
+        </div>
+        <div class="quote">
+          <p>“I was able to find a great selection of easy care plants! My plants have been growing strong for more than a year now.”</p>
+          <span class="who-quote">-Jerry B., Lincoln, NE</span>
+        </div>
+        <div class="quote">
+          <p>“Love the prices and love the service. Their plant delivery guarantee helps me shop with confidence. I'll definitely be coming back for more plants.”</p>
+          <span class="who-quote">-Timothy R., Oslo, Norway</span>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-btn owl-nav" id="testimonials-next">
+      <a href><img alt="Next" src="../images/next_icon.png" /></a>
+    </div>
+  </section>
 </body>
+<footer>
+  <script src="../js/jquery-3.3.1.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
+  <script src="../js/index.js"></script>
+</footer>
 
 </html>
