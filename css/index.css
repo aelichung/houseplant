@@ -185,12 +185,10 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 6em;
-  /* display: grid;
-  grid-template-columns: 1fr 4fr 1fr; */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 55vh;
 }
 
 .testimonials,
@@ -247,6 +245,9 @@ button:focus {
 
 .quote {
   text-align: center;
+}
+
+.quote > p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 1.5em;
@@ -254,16 +255,101 @@ button:focus {
 }
 
 .who-quote {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
   font-weight: 400;
   font-size: 0.8em;
 }
 
+.landing-present {
+  background-image: url(../images/watercolor_present_bg.png);
+  background-size: 110% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  margin-bottom: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-container {
+  height: 100%;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.gift-container > img {
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  margin: auto;
+  width: 30vw;
+}
+
+.present-text {
+  grid-row: 2 / -1;
+  grid-column: 2 / -1;
+  margin-left: 50px;
+  margin-bottom: 0.5em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.h-present {
+  height: auto;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.p-present {
+  width: 100%;
+}
+
+.present-text > button {
+  /* margin-bottom: 0; */
+}
+
+.heading {
+  color: #fff;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 4em;
+}
+
+p {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  color: #607848;
+}
+
+.CTA-large-white {
+  width: 200px;
+  height: 62px;
+  background-color: #fff;
+  border: 1px solid #607848;
+  border-radius: 4px;
+  padding: 0.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #607848;
+  font-size: 24px;
+}
+
 @media (max-width: 500px) {
-  .top-container > .desktop {
+  .desktop {
     display: none;
   }
   .top-container {
     height: 75vh;
+  }
+  .testimonials-container {
+    background-size: cover;
+    height: auto;
   }
   .quote {
     font-size: 1.2em;
@@ -274,7 +360,7 @@ button:focus {
   .top-container {
     grid-template-columns: 1fr 1fr;
   }
-  .top-container > .mobile {
+  .mobile {
     display: none;
   }
   .logo {
@@ -283,10 +369,54 @@ button:focus {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
+  .testimonials-container {
+    height: auto;
+  }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 500px) and (max-width: 960px) {
+  .landing-present {
+    background-size: auto 30%;
+    margin-top: -5%;
+  }
+  .gift-container > img {
+  }
+  .present-text {
+    margin-left: 0;
+    /* height: auto; */
+  }
+  .heading {
+    font-size: 7vw;
+  }
+  br {
+    display: none;
+  }
+  p {
+    font-size: 4vw;
+  }
+  /* .p-present {
+    margin-top: 0;
+  } */
+  .CTA-large-white {
+    width: 18vw;
+    height: 6vw;
+    font-size: 1em;
+    padding: 0.5em;
+  }
+}
+
+@media (min-width: 1200px) {
   .slogans > li {
     font-size: 72px;
+  }
+  /* .landing-present {
+    margin-top: 0;
+  } */
+  .gift-container > img {
+    height: auto;
+    /* width: 541px; */
+  }
+  .h-present {
+    padding-bottom: 0;
   }
 }
