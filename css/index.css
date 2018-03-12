@@ -386,13 +386,13 @@ button:focus {
 }
 
 .instagram-brush-container {
-  background-image: url(/images/watercolor_insta_bg.png);
+  background-image: url(../images/watercolor_insta_bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   height: 30vh;
   width: 100vw;
-  margin-top: 1vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -544,7 +544,7 @@ p {
 }
 
 .footer-flex-text {
-  margin-top: 1em;
+  margin-top: 10%;
   width: 80vw;
   max-width: 450px;
   display: flex;
