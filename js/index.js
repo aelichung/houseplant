@@ -3,8 +3,8 @@ $(document).ready(function() {
     $('.hamburger').toggleClass('arrow');
   });
 
-  var owl = $('.owl-carousel');
-  owl.owlCarousel({
+  var testimonials = $('#testimonials-carousel');
+  testimonials.owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
@@ -12,13 +12,48 @@ $(document).ready(function() {
     dots: true
   });
 
+  var instaowl = $('#insta');
+  instaowl.owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    items: 4,
+    dots: true,
+    responsiveClass: true,
+    responsive: {
+      // breakpoint from 0 up
+      0: {
+        items: 2
+      },
+      // breakpoint from 480 up
+      500: {
+        items: 2,
+        nav: false
+      },
+      // breakpoint from 768 up
+      768: {
+        items: 4
+      }
+    }
+  });
+
   $('#testimonials-prev > a').click(function(e) {
-    owl.trigger('prev.owl.carousel');
+    testimonials.trigger('prev.owl.carousel');
     e.preventDefault();
   });
 
   $('#testimonials-next > a').click(function(e) {
-    owl.trigger('next.owl.carousel');
+    testimonials.trigger('next.owl.carousel');
+    e.preventDefault();
+  });
+
+  $('#insta-prev > a').click(function(e) {
+    instaowl.trigger('prev.owl.carousel');
+    e.preventDefault();
+  });
+
+  $('#insta-next > a').click(function(e) {
+    instaowl.trigger('next.owl.carousel');
     e.preventDefault();
   });
 });

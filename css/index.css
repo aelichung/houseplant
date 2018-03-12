@@ -181,14 +181,15 @@ button:focus {
 
 .testimonials-container {
   background-image: url(../images/watercolor_testimonial_bg.png);
-  background-size: cover;
+  background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 6em;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55vh;
+  height: 90vh;
+  max-height: 500px;
 }
 
 .testimonials,
@@ -214,7 +215,7 @@ button:focus {
 }
 
 .carousel-btn > a {
-  padding: 3em;
+  padding: 1em;
 }
 
 .owl-stage {
@@ -227,6 +228,7 @@ button:focus {
   margin-top: 2em;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .owl-dot {
@@ -236,7 +238,7 @@ button:focus {
   margin: 2em 1em;
   border-radius: 50%;
   text-align: center;
-  background-color: #fff;
+  background-color: #e0e0e0;
 }
 
 .owl-dot.active {
@@ -245,12 +247,15 @@ button:focus {
 
 .quote {
   text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .quote > p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fff;
 }
 
@@ -258,7 +263,7 @@ button:focus {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .landing-present {
@@ -267,15 +272,15 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   height: auto;
-  margin-bottom: 4em;
+  margin-bottom: 6em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .gift-container {
-  height: 100%;
   width: 80vw;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -292,32 +297,170 @@ button:focus {
   grid-row: 2 / -1;
   grid-column: 2 / -1;
   margin-left: 50px;
-  margin-bottom: 0.5em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.h-present {
+  white-space: nowrap;
+}
+
+.p-present {
+}
+
+.easy-container {
+  background-image: url(../images/watercolor_easy_bg.png);
+  background-position: center;
+  background-size: 110% auto;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100vw;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-easy {
   height: 100%;
+  width: 80vw;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.landing-easy > img {
+  grid-row: 1 / -1;
+  grid-column: 2 / -1;
+  margin: auto;
+  width: 30vw;
+}
+
+.easy-text {
+  grid-row: 2 / -1;
+  grid-column: 1 / 2;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.h-present {
+.p-easy {
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+.easy-info-container {
+  margin: 0 5%;
+}
+
+.easy-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
   height: auto;
-  width: 100%;
-  white-space: nowrap;
+  margin: 0 auto;
 }
 
-.p-present {
-  width: 100%;
+.care-icons {
+  display: flex;
+  justify-content: space-around;
+  max-width: 840px;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.present-text > button {
-  /* margin-bottom: 0; */
+.care-icons > img {
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.easy-info > p {
+  text-align: center;
+}
+
+.instagram-brush-container {
+  background-image: url(/images/watercolor_insta_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 30vh;
+  width: 100vw;
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-line-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-line-flex-container > img {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.next-line-flex-container > h2 {
+  margin: 0;
+}
+
+h4 {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.instagram-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imagepics {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+#insta {
+  margin-top: 5%;
+}
+
+.insta-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 325px;
+  margin: 10px;
 }
 
 .heading {
   color: #fff;
   font-family: 'Caveat Brush', cursive;
-  font-size: 4em;
+  font-size: 5em;
+}
+
+h3 {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  color: #607848;
+  text-align: center;
 }
 
 p {
@@ -351,9 +494,79 @@ p {
     background-size: cover;
     height: auto;
   }
-  .quote {
-    font-size: 1.2em;
+  .quote > p {
+    font-size: 1.5em;
   }
+  .who-quote {
+    font-size: 1em;
+  }
+  .easy-info {
+    max-height: none;
+    height: auto;
+  }
+  .instagram-brush-container {
+    margin-top: 10vh;
+    background-size: 400% 100%;
+    height: 50vh;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  .next-line-flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .next-line-flex-container > h2 {
+    font-size: 3em;
+  }
+  .imagepics {
+    width: 70vw;
+  }
+  .insta-pic {
+    height: auto;
+  }
+}
+
+.bottom-text {
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 6em;
+}
+
+.footer-container {
+  background-color: #f0f0f0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-flex-text {
+  margin-top: 1em;
+  width: 80vw;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-column-text > p {
+  font-size: 1em;
+}
+
+.footer-logo {
+  margin: 1em;
 }
 
 @media (min-width: 500px) {
@@ -370,19 +583,26 @@ p {
     grid-row: 1 / 2;
   }
   .testimonials-container {
-    height: auto;
+    background-size: auto 100%;
   }
 }
 
 @media (min-width: 500px) and (max-width: 960px) {
-  .landing-present {
-    background-size: auto 30%;
-    margin-top: -5%;
+  .testimonials-container {
+    height: auto;
+    max-height: 900px;
   }
-  .gift-container > img {
+  .landing-present,
+  .easy-container {
+    background-size: auto 30%;
   }
   .present-text {
+    margin-top: 5%;
+  }
+  .present-text,
+  .easy-text {
     margin-left: 0;
+    padding-bottom: 0;
     /* height: auto; */
   }
   .heading {
@@ -392,16 +612,35 @@ p {
     display: none;
   }
   p {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   /* .p-present {
     margin-top: 0;
   } */
   .CTA-large-white {
-    width: 18vw;
+    width: auto;
     height: 6vw;
     font-size: 1em;
     padding: 0.5em;
+  }
+  .instagram-brush-container {
+    margin-top: 10vh;
+    background-size: 400% 100%;
+    height: 50vh;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  .next-line-flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .next-line-flex-container > h2 {
+    font-size: 3em;
+  }
+  .insta-pic {
+    height: auto;
   }
 }
 
@@ -415,8 +654,5 @@ p {
   .gift-container > img {
     height: auto;
     /* width: 541px; */
-  }
-  .h-present {
-    padding-bottom: 0;
   }
 }
