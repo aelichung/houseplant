@@ -1,0 +1,51 @@
+.shipping-container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#shipping {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.shipping-column-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shipping-column-flex > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.disclaimer {
+  align-self: center;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shipping-option > label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-button-box {
+  margin-right: 1em;
+}

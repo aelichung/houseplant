@@ -5,6 +5,9 @@ body {
   min-width: 100%;
 }
 
+.header-container {
+}
+
 .header-top-icons {
   display: flex;
   align-items: center;

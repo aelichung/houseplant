@@ -1,3 +1,15 @@
+.CTA-large-green {
+  width: auto;
+  height: 62px;
+  background-color: #75995a;
+  border-radius: 4px;
+  padding: 0.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 24px;
+}
+
 .bottom-text {
   width: 90vw;
   margin: 0 auto;

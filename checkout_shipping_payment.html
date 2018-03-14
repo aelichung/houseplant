@@ -6,6 +6,8 @@
   <meta name="author" content="Anne-Elise Chung" />
   <meta name="keywords" content="Chung, Anne-Elise, plants, plant, indoor, store, product-page" />
   <link rel="stylesheet" href="css/header.css" type="text/css" />
+  <link rel="stylesheet" href="css/checkout.css" type="text/css" />
+  <link rel="stylesheet" href="css/shipping.css" type="text/css" />
   <link rel="stylesheet" href="css/footer.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
@@ -39,6 +41,153 @@
       </div>
     </div>
   </section>
+
+  <section class="checkout-progress-container">
+    <div class="checkout-progress-top">
+      <p class="checkout-progress-text">
+        Address
+      </p>
+      <p class="checkout-progress-text">
+        Shipping and<br />Payment
+      </p>
+      <p class="checkout-progress-text">
+        Review and<br />Submit
+      </p>
+    </div>
+    <div class="checkout-progress-bottom">
+      <img alt="progress" src="images/checkout_progress2.png" />
+    </div>
+  </section>
+
+
+  <h1 class="brush-header">Shipping Methods</h1>
+
+  <section class="shipping-container">
+    <form id="shipping">
+      <div class="shipping-column-flex">
+        <div class="shipping-option">
+          <input class="radio-button" type="radio" name="shipping-option" value="option1" id="option1" checked/>
+          <label for="option1">
+            <div class="radio-button-box">
+            </div>
+            <div>
+              <h5>January 15th ($3.99)</h5>
+      <h6>Standard Shipping (4-5 days)</h6>
+            </div>
+          </label>
+        </div>
+
+
+        <div class="shipping-option">
+          <input class="radio-button" type="radio" name="shipping-option" value="option2" id="option2">
+          <label for="option2">
+          <div class="radio-button-box">
+                  </div>
+                  <div>
+                    <h5>January 15th ($3.99)</h5>
+            <h6>Standard Shipping (4-5 days)</h6>
+                  </div></label>
+        </div>
+      </div>
+
+      <div class="shipping-column-flex">
+        <div class="shipping-option">
+          <input class="radio-button" type="radio" name="shipping-option" value="option3" id="option3">
+          <label for="option3">           <div class="radio-button-box">
+                    </div>
+                    <div>
+                      <h5>January 15th ($3.99)</h5>
+              <h6>Standard Shipping (4-5 days)</h6>
+                    </div></label>
+        </div>
+        <div class="shipping-option">
+          <input class="radio-button" type="radio" name="shipping-option" value="option4" id="option4">
+          <label for="option4">           <div class="radio-button-box">
+                    </div>
+                    <div>
+                      <h5>January 15th ($3.99)</h5>
+              <h6>Standard Shipping (4-5 days)</h6>
+                    </div></label>
+        </div>
+      </div>
+    </form>
+    <p class="disclaimer">
+      *Order before 4:30pm to receive within same day.*
+    </p>
+  </section>
+
+  <section class="payment-container">
+    <div>
+      <h1 class="brush-header">Payment</h1>
+    </div>
+    <div>
+      <p class="sub-header">
+        Pay With PayPal Or Other Alternatives
+      </p>
+    </div>
+    <div>
+      <form id="alt-payment">
+        <div class="alt-pay">
+          <input type="hidden" name="alt-pay" value="pp">
+          <input type="image" src="images/pay_pp.png">
+        </div>
+        <div class="alt-pay">
+          <input type="hidden" name="alt-pay" value="vs">
+          <input type="image" src="images/pay_vs.png">
+        </div>
+        <div class="alt-pay">
+          <input type="hidden" name="alt-pay" value="ama">
+          <input type="image" src="images/pay_ama.png">
+        </div>
+      </form>
+    </div>
+    <p class="sub-header">
+      Pay With Credit Card
+    </p>
+    <div>
+      <form id="payment">
+        <div class="pay">
+          <input type="hidden" name="pay" value="main-vs">
+          <input type="image" src="images/pay_main_vs.png">
+        </div>
+        <div class="pay">
+          <input type="hidden" name="pay" value="main-dis">
+          <input type="image" src="images/pay_main_dis.png">
+        </div>
+        <div class="pay">
+          <input type="hidden" name="pay" value="main-mc">
+          <input type="image" src="images/pay_main_mc.png">
+        </div>
+        <div class="pay">
+          <input type="hidden" name="pay" value="main-ae">
+          <input type="image" src="images/pay_main_ae.png">
+        </div>
+      </form>
+    </div>
+    <div>
+      <form id="pay-details">
+        <div class="form-row">
+          <span>Card Number</span>
+          <input type="text" name="card-number">
+        </div>
+        <div class="form-row">
+          <span>Expiration Date</span>
+          <input type="text" name="month">
+          <input type="text" name="year">
+        </div>
+        <div class="form-row">
+          <span>CVV</span>
+          <input type="text" name="cvv">
+        </div>
+      </form>
+    </div>
+
+    <button formaction="checkout_review_submit.html" name="next-review" class="CTA-large-green">Next : Review and Submit</button>
+
+  </section>
+
+
+
   <section class="footer-container">
     <div class="footer-flex-text">
       <div class="footer-column-text">
@@ -73,7 +222,7 @@
 </body>
 <footer>
   <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/checkout.js"></script>
 </footer>
 
 </html>
