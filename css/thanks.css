@@ -20,7 +20,7 @@
 
 .CTA-large-white {
   width: auto;
-  height: 62px;
+  height: auto;
   background-color: #fff;
   border: 1px solid #607848;
   border-radius: 4px;
@@ -54,20 +54,20 @@
 
 form {
   margin-top: 3em;
-  margin-right: 8em;
+  margin-right: 6em;
 }
 
 .form-row {
   margin-top: 1em;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
 }
 
 .text-box-size {
-  width: 120px;
-  min-width: 120px;
-  max-width: 120px;
+  width: 6em;
+  /* min-width: 120px;
+  max-width: 120px; */
   height: 20px;
   padding-right: 1em;
   text-align: right;
@@ -84,4 +84,15 @@ form {
   height: 36px;
   width: 80vw;
   max-width: 300px;
+}
+
+@media (max-width: 500px) {
+  form {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .form-row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
