@@ -70,9 +70,9 @@
           <label for="option1">
             <div class="radio-button-box">
             </div>
-            <div>
-              <h5>January 15th ($3.99)</h5>
-      <h6>Standard Shipping (4-5 days)</h6>
+            <div class="shipping-text">
+                <h5>January 15th <b>($3.99)</b></h5>
+                <h6>Standard Shipping (4-5 days)</h6>
             </div>
           </label>
         </div>
@@ -81,33 +81,38 @@
         <div class="shipping-option">
           <input class="radio-button" type="radio" name="shipping-option" value="option2" id="option2">
           <label for="option2">
-          <div class="radio-button-box">
-                  </div>
-                  <div>
-                    <h5>January 15th ($3.99)</h5>
-            <h6>Standard Shipping (4-5 days)</h6>
-                  </div></label>
+            <div class="radio-button-box">
+            </div>
+            <div class="shipping-text">
+              <h5>January 14th <b>($12.99)</b></h5>
+              <h6>UPS 2nd Day Air (3-4 days)</h6>
+            </div>
+          </label>
         </div>
       </div>
 
       <div class="shipping-column-flex">
         <div class="shipping-option">
           <input class="radio-button" type="radio" name="shipping-option" value="option3" id="option3">
-          <label for="option3">           <div class="radio-button-box">
-                    </div>
-                    <div>
-                      <h5>January 15th ($3.99)</h5>
-              <h6>Standard Shipping (4-5 days)</h6>
-                    </div></label>
+          <label for="option3">
+            <div class="radio-button-box">
+            </div>
+            <div class="shipping-text">
+              <h5>January 13th <b>($14.99)</b></h5>
+              <h6>UPS Next Day Air Saver (2-3 days)</h6>
+            </div>
+          </label>
         </div>
         <div class="shipping-option">
           <input class="radio-button" type="radio" name="shipping-option" value="option4" id="option4">
-          <label for="option4">           <div class="radio-button-box">
-                    </div>
-                    <div>
-                      <h5>January 15th ($3.99)</h5>
-              <h6>Standard Shipping (4-5 days)</h6>
-                    </div></label>
+          <label for="option4">
+            <div class="radio-button-box">
+            </div>
+            <div class="shipping-text">
+              <h5>January 12th <b>($20.99)</b></h5>
+              <h6>UPS Next Day Air (1-2 days)</h6>
+            </div>
+          </label>
         </div>
       </div>
     </form>
@@ -116,7 +121,7 @@
     </p>
   </section>
 
-  <section class="payment-container">
+  <section class="overall-payment-container">
     <div>
       <h1 class="brush-header">Payment</h1>
     </div>
@@ -125,7 +130,7 @@
         Pay With PayPal Or Other Alternatives
       </p>
     </div>
-    <div>
+    <div class="alt-pay-container">
       <form id="alt-payment">
         <div class="alt-pay">
           <input type="hidden" name="alt-pay" value="pp">
@@ -144,7 +149,7 @@
     <p class="sub-header">
       Pay With Credit Card
     </p>
-    <div>
+    <div class="pay-container">
       <form id="payment">
         <div class="pay">
           <input type="hidden" name="pay" value="main-vs">
@@ -163,26 +168,52 @@
           <input type="image" src="images/pay_main_ae.png">
         </div>
       </form>
-    </div>
-    <div>
-      <form id="pay-details">
-        <div class="form-row">
-          <span>Card Number</span>
-          <input type="text" name="card-number">
-        </div>
-        <div class="form-row">
-          <span>Expiration Date</span>
-          <input type="text" name="month">
-          <input type="text" name="year">
-        </div>
-        <div class="form-row">
-          <span>CVV</span>
-          <input type="text" name="cvv">
-        </div>
-      </form>
+      <div>
+        <form id="pay-details">
+          <div class="form-row">
+            <div class="text-box-size">
+              Card Number
+            </div>
+            <input type="text" name="card-number">
+          </div>
+          <div class="form-row exp-date">
+            <div class="text-box-size">
+              Expiration Date
+            </div>
+            <select id="month">
+              <option value = "January">January</option>
+              <option value = "February">February</option>
+              <option value = "March">March</option>
+              <option value = "April">April</option>
+              <option value = "May">May</option>
+              <option value = "June">June</option>
+              <option value = "July">July</option>
+              <option value = "August">August</option>
+              <option value = "September">September</option>
+              <option value = "October">October</option>
+              <option value = "November">November</option>
+              <option value = "December">December</option>
+            </select>
+            <select id="year">
+              <option value = "2022">2022</option>
+              <option value = "2021">2021</option>
+              <option value = "2020">2020</option>
+              <option value = "2019">2019</option>
+              <option value = "2018">2018</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="text-box-size">
+              CVV
+            </div>
+            <input type="text" name="cvv">
+          </div>
+        </form>
+      </div>
     </div>
 
-    <button formaction="checkout_review_submit.html" name="next-review" class="CTA-large-green">Next : Review and Submit</button>
+
+    <a href="checkout_review_submit.html"><button class="CTA-large-green">Next : Review and Submit</button></a>
 
   </section>
 
