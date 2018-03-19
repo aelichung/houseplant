@@ -1,3 +1,141 @@
-.color:hover {
+.filter-and-main-container {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  width: 100vw;
+  grid-template-rows: 1fr;
+}
+
+.filter-menu-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3em;
+  padding-top: 2em;
+  width: 300px;
+  grid-column: 1 / 3 ;
+}
+
+.filter-header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.filter-header {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: #607848;
+}
+
+.filter-product-type-item {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #607848;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-product-type-item:hover {
+  background-color: #E0E0E0;
+}
+
+.filter-product-type-item:active {
+  background-color: #E0E0E0;
+}
+
+.filter-product-type-item > h5 {
+  padding-left: 10%;
+}
+
+.filter-product-type-spacer {
+  height: 30px;
+}
+
+.filter-product-type-colors {
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  grid-template-rows: repeat(2 , 1fr);
+  margin-bottom: 2em;
+}
+
+.main-gallery-container {
+  padding-top: 2em;
+  grid-column: 4 / 12 ;
+  margin-left: 2em;
+}
+
+.color {
+  margin: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.color:hover , .color:active {
   background-image: url('../images/color_gray_active.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.filter-size-container {
+  margin-bottom: 2em;
+}
+
+.filter-size-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10%;
+
+}
+
+.filter-size-text {
+  padding-left: 5%;
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #607848;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.brush-header {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 3em;
+  color: #75995a;
+  margin-top: 0;
+}
+
+.search_icon {
+  margin-right: 11em;
+}
+
+.items-container {
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(auto-fit , minmax(215px, 1fr));
+  grid-template-rows: repeat(auto-fit , minmax(366px, 1fr));
+}
+
+.item-title {
+
+}
+
+.item-subtitle {
+  
 }
