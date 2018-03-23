@@ -42,10 +42,12 @@
 
 .filter-product-type-item:hover {
   background-color: #E0E0E0;
+  cursor: pointer;
 }
 
 .filter-product-type-item:active {
   background-color: #E0E0E0;
+  cursor: pointer;
 }
 
 .filter-product-type-item > h5 {
@@ -237,6 +239,7 @@
   justify-content: flex-start;
   align-items: center;
   padding-top: 1em;
+  cursor: pointer;
 }
 
 .overlay-text {
@@ -299,12 +302,14 @@
   font-weight: 600;
   color: #75995A;
   height: 37px;
+  cursor: pointer;
 }
 
 .CTA-cart:hover {
   color: white;
   background-color: #75995A;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .CTA-wishlist {
@@ -314,11 +319,13 @@
   margin-left: .5em;
   font-size: 1em;
   color: #75995A;
+  cursor: pointer;
 }
 
 .CTA-wishlist:hover {
   background-color: #75995A;
   color: white;
+  cursor: pointer;
 }
 
 .easy-item {
