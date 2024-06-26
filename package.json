@@ -1,0 +1,22 @@
+{
+  "name": "houseplant",
+  "version": "1.0.0",
+  "description": "online store for plants",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelichung/houseplant.git"
+  },
+  "author": "\"Anne-Elise Chung <aelichung@gmail.com> (https://anne-elise.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aelichung/houseplant/issues"
+  },
+  "homepage": "https://github.com/aelichung/houseplant#readme",
+  "dependencies": {
+    "tedious": "^18.2.1"
+  }
+}
