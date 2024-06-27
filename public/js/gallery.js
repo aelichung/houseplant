@@ -1,5 +1,6 @@
 $(function() {
 
+  console.log("test");
   var handle = $( "#custom-handle" );
   var handleb = $( "#custom-handleb" );
 

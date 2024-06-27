@@ -328,10 +328,6 @@
   cursor: pointer;
 }
 
-.easy-item {
-  display: none;
-}
-
 .next-prev-container {
   display: flex;
   align-items: center;
