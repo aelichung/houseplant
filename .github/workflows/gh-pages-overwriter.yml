@@ -1,0 +1,15 @@
+name: gh-pages overwriter test
+run-name: ${{ github.actor }} is testing out Gh pages overwriter
+on: [push]
+jobs:
+  GH-pages-overwriter:
+    runs-on: ubuntu-latest
+    steps:  
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Publish current workdir (which contains generated content) to GitHub Pages
+        uses: rayluo/github-pages-overwriter@v1.3
+        with:
+          source-directory: /public
+          target-branch: master
+
