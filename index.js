@@ -1,7 +1,10 @@
+// express is a framework for node.js
+// it provides some nice apis for web app development
 const express = require('express')
 const app = express()
 const port = 8080
 
+// sets up the config for remote sql server connection and relevant variables
 var Connection = require('tedious').Connection;  
 var config = {  
     server: 'cis55.missioncollege.edu',
@@ -29,11 +32,14 @@ app.get('/', (req, res)=>{
 //middleware
 app.use(express.static('public'))
 
+// mustache- template engine
+//mustache-express lets you load mustache with express
 const mustachExpress = require('mustache-express')
 app.engine('mustache', mustachExpress())
 
 app.set('view engine', 'mustache')
 
+//when a client routes to the domain.com/gallery, fire this callback
 app.get('/gallery', (req, res)=>{
     var callback = function(rows) {  
         console.log(rows);
@@ -63,8 +69,9 @@ app.get('/gallery', (req, res)=>{
 
         res.render('gallery', { items: items })
     }
-    query("select * from Product_View", callback)
-    
+    // calling query here kicks off the tedious connection 
+    // record processing starts once the connection is established and Tedious fires a done or doneInProc event
+    query("select * from Product_View", callback)   
 })
 
 
@@ -115,7 +122,7 @@ function executeStatement(statement, connection, callback) {
 }
 
 
-//run 
+//run the application
 app.listen(port, ()=>{
     console.log(`listening on ${port}`)
 })
